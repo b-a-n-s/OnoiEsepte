@@ -2,11 +2,13 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram.filters import Command 
 import asyncio
-API_TOKEN = "7718390615:AAERDda35Ktx4gwKUbnCImv3RNwFlz0WWj4"
+import os
 
-
-
+API_TOKEN = os.getenv("7718390615:AAERDda35Ktx4gwKUbnCImv3RNwFlz0WWj4")
 bot = Bot(token=API_TOKEN)
+
+
+
 dp = Dispatcher()
 
 ort_total = 0
